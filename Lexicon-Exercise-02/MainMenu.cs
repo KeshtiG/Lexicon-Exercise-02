@@ -29,7 +29,7 @@ namespace Lexicon_Exercise_02
                         RepeatText.PrintRepeatedText();
                         break;
                     case 3:
-                        Console.WriteLine("You selected option 3.");
+                        ThirdWord.DisplayThirdWord();
                         break;
                     case 0:
                         Console.WriteLine("Exiting the program.");
@@ -51,7 +51,7 @@ namespace Lexicon_Exercise_02
             Console.WriteLine("----------------------------------");
             Console.WriteLine("1. Cinema ticket price calculator");
             Console.WriteLine("2. Repeat text 10 times");
-            Console.WriteLine("3. Option 3");
+            Console.WriteLine("3. Dispaly the third word of a sentence");
             Console.WriteLine();
             Console.WriteLine("0. Exit the program");
             Console.WriteLine("----------------------------------");
