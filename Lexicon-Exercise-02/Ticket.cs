@@ -26,14 +26,15 @@ namespace Lexicon_Exercise_02
             int pensioner = 65;
 
             // Nested if statement to determine ticket type
-            if (age <= youth)
-            {
-                return "Youth";
-            }
+            if (age < 5 || age > 100)
+                return "Free";
 
             else
             {
-                if (age >= pensioner)
+                if (age <= youth)
+                    return "Youth";
+
+                else if (age >= pensioner)
                     return "Pensioner";
 
                 else
@@ -44,7 +45,9 @@ namespace Lexicon_Exercise_02
         // Set ticket price based on ticket type
         private static uint SetTicketPrice(string ticketType)
         {
-            if (ticketType == "Youth")
+            if (ticketType == "Free")
+                return 0;
+            else if (ticketType == "Youth")
                 return 80;
             else if (ticketType == "Pensioner")
                 return 90;

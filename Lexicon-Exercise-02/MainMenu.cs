@@ -26,7 +26,7 @@ namespace Lexicon_Exercise_02
                         TicketMenu.HandleTicketChoices();
                         break;
                     case 2:
-                        Console.WriteLine("You selected option 2.");
+                        RepeatText.PrintRepeatedText();
                         break;
                     case 3:
                         Console.WriteLine("You selected option 3.");
@@ -50,7 +50,7 @@ namespace Lexicon_Exercise_02
             Console.WriteLine("MAIN MENU");
             Console.WriteLine("----------------------------------");
             Console.WriteLine("1. Cinema ticket price calculator");
-            Console.WriteLine("2. Option 2");
+            Console.WriteLine("2. Repeat text 10 times");
             Console.WriteLine("3. Option 3");
             Console.WriteLine();
             Console.WriteLine("0. Exit the program");
