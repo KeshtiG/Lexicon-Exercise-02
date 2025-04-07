@@ -21,12 +21,14 @@ namespace Lexicon_Exercise_02
         // Set ticket price based on age
         private static string SetTicketType(uint age)
         {
-            // Define age limits for youth and pensioner (easy to change)
+            // Define age limits (easy to change)
+            int child = 4;
             int youth = 19;
             int pensioner = 65;
+            int freePensioner = 101;
 
             // Nested if statement to determine ticket type
-            if (age < 5 || age > 100)
+            if (age <= child || age >= freePensioner)
                 return "Free";
 
             else
