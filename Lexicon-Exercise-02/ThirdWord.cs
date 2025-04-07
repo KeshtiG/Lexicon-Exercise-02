@@ -17,29 +17,35 @@ namespace Lexicon_Exercise_02
 
         internal static void DisplayThirdWord()
         {
-            // A "do while" loop to ensure the user gets to try again if they don't enter 3 words
+            // Create a boolean flag to indicate if the loop is done or not
             bool done = false;
 
+            /* A "do while" loop to ensure the user gets to try again if they don't enter
+             * a correct number of words */
             do
             {
                 string userInput = GetUserInput();
 
-                // Split the input string into words on space and remove empty entries (extra spaces)
-                // with StringSplitOptions and RemoveEmptyEntries
+                /* Split the input string into words on space and remove empty entries
+                 * (extra spaces) with StringSplitOptions and RemoveEmptyEntries */
                 var words = userInput.Split(' ', StringSplitOptions.RemoveEmptyEntries);
 
                 // Check if the input contains at least 3 words
                 if (words.Length >= 3)
                 {
-                    // Display the third word and set done to true to exit the loop
+                    // Display the third word (number 2 in the array)
                     Console.WriteLine($"The third word is: {words[2]}.");
+
+                    // Set the "done" flag to "true" to exit the loop
                     done = true;
                 }
                 else
                 {
-                    Console.WriteLine("You need to enter 3 words or more.");
+                    // If the input doesn't contain at least 3 words, ask the user to try again
+                    Console.WriteLine("You need to enter 3 words or more, try again.");
                 }
             }
+            // Repeat the loop until the "done" flag is set to true
             while (!done);
         }
     }

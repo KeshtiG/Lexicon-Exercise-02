@@ -17,8 +17,13 @@ namespace Lexicon_Exercise_02
 
         internal static void PrintRepeatedText()
         {
+            // Create an array to hold the repeated text
             string[] strings = new string[10];
+
+            // Get user input for the text to repeat
             string textToRepeat = GetUserInput();
+
+            // Initialize the array with the repeated text
             for (int i = 0; i < 10; i++)
             {
                 // Add formatted text to the array, with each element numbered starting from 1
@@ -27,6 +32,7 @@ namespace Lexicon_Exercise_02
 
             // Join the array elements into a single string with a comma and space as the separator
             string joinedText = string.Join(", ", strings);
+
             Console.WriteLine(joinedText);
         }
     }
