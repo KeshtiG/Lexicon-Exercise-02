@@ -48,7 +48,7 @@ namespace Lexicon_Exercise_02
                         // Calculate the total price for a group of tickets
                         uint ticketSum = ticket.CalcGroupSum(numberOfTickets);
 
-                        Console.WriteLine($"{Environment.NewLine}Total sum: {ticketSum} kr.");
+                        Console.WriteLine($"{Environment.NewLine}Total sum ({numberOfTickets} tickets): {ticketSum} kr.");
                         break;
 
                     // Exit to main menu

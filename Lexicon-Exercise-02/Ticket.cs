@@ -86,8 +86,11 @@ namespace Lexicon_Exercise_02
                 // Add the ticket to the list
                 tickets.Add(ticketInGroup);
 
+                // Get the ticket price for the current ticket
+                uint ticketPrice = ticketInGroup.GetTicketPrice();
+
                 // Sum the ticket prices
-                ticketSum += Price;
+                ticketSum += ticketPrice;
             }
 
             return ticketSum;
